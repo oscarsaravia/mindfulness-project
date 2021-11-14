@@ -1,0 +1,23 @@
+.arrow {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.content {
+  height: 90vh;
+  background-color: #92A8D1;
+  padding: 5vh 2vw;
+  .career-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .description {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <img class="arrow" src="../../assets/arrow.png" alt="back" (click)="goHome()">
+  <div class="parent">
+    <div class="left-part">
+      <div class="activity" (click)="selectCard(1)" [ngClass]="cardSelected === 1 ? 'card-selected' : ''">
+        ACTIVIDAD # 1
+      </div>
+      <div class="activity" (click)="selectCard(2)" [ngClass]="cardSelected === 2 ? 'card-selected' : ''">
+        ACTIVIDAD # 2
+      </div>
+      <div class="activity" (click)="selectCard(3)" [ngClass]="cardSelected === 3 ? 'card-selected' : ''">
+        ACTIVIDAD # 3
+      </div>
+    </div>
+    <div class="right-part">
+      <div class="activity-description">
+        <h1 class="click-me" *ngIf="cardSelected === 0">Elige una actividad</h1>
+        <div class="info" *ngIf="cardSelected !== 0">
+          <h1 class="activity-name">{{ activityName }}</h1>
+          <img *ngIf="cardSelected !== 0" src="../../assets/activity{{cardSelected}}.png" alt="img">
+          <p class="activity-desc">{{ activityDesc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

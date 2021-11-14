@@ -1,0 +1,36 @@
+.container {
+  cursor: pointer;
+  padding: 2px;
+  height: 230px;
+  width: 230px;
+  background-color: #f50057;
+  margin-right: 20px;
+  border-radius: 10px;
+  position: relative;
+  .title {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #f50057;
+    .title {
+      color:#f50057;
+    }
+  }
+  .icon {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
