@@ -8,9 +8,8 @@ const app = express();
 // Replace the '/dist/mindfulness-final'
 app.use(express.static(__dirname + '/dist'));
  
-app.get('*', function(req,res) {
-  // Replace the '/dist/mindfulness-final/index.html'
-  res.sendFile(path.join(__dirname + '/dist/index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(`./mindfulness-final/dist/index.html`); // load the single view file (angular will handle the page changes on the front-end)
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
