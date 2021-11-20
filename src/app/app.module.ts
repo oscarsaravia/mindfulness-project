@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { CareerComponent } from './career/career.component';
 import { LifeComponent } from './life/life.component';
+import { ReferencesComponent } from './references/references.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LifeComponent } from './life/life.component';
     ActivitiesComponent,
     CareerComponent,
     LifeComponent,
+    ReferencesComponent,
   ],
   imports: [
     BrowserModule,

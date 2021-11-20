@@ -35,10 +35,21 @@
   }
   .home-right {
     position: relative;
-    img {
+    .person-icon {
       position: absolute;
       bottom: 0;
       right: 0;
+      height: 30vw;
+    }
+    .reference {
+      height: 7vw;
+      position: absolute;
+      right: 1vw;
+      top: 1vw;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -46,7 +57,7 @@
 
 @media only screen and (max-width: 1725px) {
   .home-right {
-    display: none;
+    // display: none;
   }
 }
 @media only screen and (max-width: 875px) {
